@@ -1,0 +1,14 @@
+sudo: required
+
+language: ruby
+
+services:
+  - docker
+
+before_install:
+  - docker-compose start
+  - docker ps -a
+  - docker-compose web run bundle exec rake test
+
+script:
+  - bundle exec rake test
