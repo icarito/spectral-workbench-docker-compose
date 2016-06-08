@@ -6,7 +6,8 @@ services:
   - docker
 
 before_install:
-  - git clone http://github.com/icarito/spectral-workbench spectralworbench
+  - git submodule init
+  - git submodule sync
   - cp spectralworkbench/config/database.yml.example spectralworkbench/config/database.yml
   - cp spectralworkbench/config/config.yml.example spectralworkbench/config/config.yml
   - docker-compose build
