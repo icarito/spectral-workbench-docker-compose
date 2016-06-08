@@ -1,6 +1,3 @@
-[submodule "spectralworbench"]
-	path = spectralworkbench
-	url = https://github.com/icarito/spectral-workbench
 [submodule "spectralworkbench"]
 	path = spectralworkbench
 	url = https://github.com/icarito/spectral-workbench
